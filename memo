@@ -1,0 +1,24 @@
+cd /etc/
+/etc/に移動
+
+cd ..
+/etc/ の上に移動
+
+cd
+/home/user に移動
+
+mkdir hoge
+hogeというディレクトリを作成
+
+cd ./hoge
+今作ったhogeに移動  「./」：今いるディレクトリ
+
+pwd
+/home/yama/hoge
+今いるディレクトリのパスを確認
+
+rmdir ./hoge
+hogeを削除
+
+
+rm：ファイル削除
