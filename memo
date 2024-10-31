@@ -22,3 +22,37 @@ hogeを削除
 
 
 rm：ファイル削除
+
+
+vi ファイル名：Vim立ち上げ
+
+
+実行権限の確認
+ls -l ファイル名
+
+実行権限付与
+chmod +x （実行）ファイル名
+       w （書く）
+       r （読む）
+
+
+mv：移動、名前の変更
+
+
+elif:else if 略
+
+
+
+
+
+git
+git add ファイル名 ：commit準備
+git commit ファイル名 ：ログ
+git push ファイル名：gitにup
+
+
+
+PATH:コマンドみつける
+
+
+
