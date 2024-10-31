@@ -20,11 +20,10 @@ pwd
 rmdir ./hoge
 hogeを削除
 
-
 rm：ファイル削除
 
-
 vi ファイル名：Vim立ち上げ
+
 
 
 実行権限の確認
@@ -38,9 +37,7 @@ chmod +x （実行）ファイル名
 
 mv：移動、名前の変更
 
-
 elif:else if 略
-
 
 
 
