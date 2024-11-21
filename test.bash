@@ -7,9 +7,8 @@ ng () {
 
 res=0
 
-a=yamada
+out=$(seq 5 | ./plus)
+[ "${out}" = 15 ] || ng "$LINENO"
 
-[ "$a" = tamnaka ] || ng "$LINENO"
-[ "$a" = yamada ] || ng "$LINEN"
-
+[ "${res}" = 0 ] && echo OK
 exit $res
