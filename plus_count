@@ -1,0 +1,36 @@
+#!/usr/bin/python3
+import sys
+
+# 引数を数値に変換
+numbers = [float(arg) for arg in sys.argv[1:]]
+
+# 1. 負の数のカウント
+negative_count = 0
+for x in numbers:
+    if x < 0.0:
+        negative_count += 1
+print(f"負の数のカウント: {negative_count}")
+
+# 2. 負と非負の数をカウント
+negative_count = 0
+non_negative_count = 0
+for x in numbers:
+    if x < 0.0:
+        negative_count += 1
+    elif x >= 0.0:
+        non_negative_count += 1
+print(f"負の数: {negative_count}, 非負の数: {non_negative_count}")
+
+# 3. 負、ゼロ、正の数をカウント
+negative_count = 0
+zero_count = 0
+positive_count = 0
+for x in numbers:
+    if x < 0.0:
+        negative_count += 1
+    elif x == 0.0:
+        zero_count += 1
+    elif x > 0.0:
+        positive_count += 1
+print(f"負の数: {negative_count}, ゼロの数: {zero_count}, 正の数: {positive_count}")
+

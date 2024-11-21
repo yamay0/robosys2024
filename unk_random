@@ -1,0 +1,41 @@
+#!/bin/bash
+
+import random
+import time
+
+def generate_hiragana():
+    # ひらがなの範囲（Unicodeで「あ」から「ん」）
+    start, end = ord("あ"), ord("ん")
+    return chr(random.randint(start, end))
+
+def main():
+    target = "うんこ"
+    count = 0
+    total_chars = 0
+    
+    # 開始時刻を記録
+    start_time = time.time()
+
+    while True:
+        # 3文字のひらがなをランダム生成
+        random_chars = ''.join(generate_hiragana() for _ in range(3))
+        print(random_chars)  # 生成された文字列を出力
+        
+        count += 1
+        total_chars += len(random_chars)
+        
+        # 出力が「うんこ」だったら終了
+        if random_chars == target:
+            break
+
+    # 終了時刻を記録
+    end_time = time.time()
+    elapsed_time = end_time - start_time
+
+    # 結果を表示
+    print(f'\n「{target}」が出るまで {elapsed_time:.2f} 秒かかりました。')
+    print(f'生成回数: {count}')
+    print(f'使用した文字数の合計: {total_chars}')
+
+if __name__ == "__main__":
+    main()

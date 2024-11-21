@@ -1,0 +1,12 @@
+$ X=我々は宇宙人だ
+
+$ echo ${X}ぜ！
+我々は宇宙人だぜ！
+$ echo $X
+我々は宇宙人だ
+$ echo '$X'
+$X
+
+$ A=(ls)
+$ echo $A
+README.md puls_stdin
